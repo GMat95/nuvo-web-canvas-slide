@@ -25,12 +25,22 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // You can replace this URL with your own Netlify form handling
+      // When deployed to Netlify, this will automatically work with their form handling
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "contact",
+          ...formData
+        }).toString()
+      });
+      
       toast({
         title: "Message Sent!",
         description: "We'll get back to you as soon as possible.",
@@ -43,9 +53,16 @@ const Contact = () => {
         subject: "",
         message: "",
       });
-      
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive",
+      });
+      console.error("Form submission error:", error);
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
@@ -62,7 +79,20 @@ const Contact = () => {
 
         <div className="flex flex-col lg:flex-row gap-12">
           <div className="lg:w-1/2">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form 
+              onSubmit={handleSubmit} 
+              className="space-y-6"
+              data-netlify="true"
+              name="contact"
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p className="hidden">
+                <label>
+                  Don't fill this out if you're human: <input name="bot-field" />
+                </label>
+              </p>
+              
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-nuvo-dark mb-1">
