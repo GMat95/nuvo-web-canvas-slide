@@ -69,7 +69,10 @@ export default {
 					gray: '#8E9196',
 					light: '#F1F0FB',
 					blue: '#1EAEDB',
-					orange: '#F97316'
+					orange: '#F97316',
+					'dark-bg': '#121212',
+					'dark-card': '#1E1E1E',
+					'dark-accent': '#232323'
 				}
 			},
 			borderRadius: {
@@ -101,6 +104,10 @@ export default {
 				'slide-out': {
 					'0%': { transform: 'translateY(0)' },
 					'100%': { transform: 'translateY(100%)' }
+				},
+				'scale-up': {
+					'0%': { transform: 'scale(0.95)', opacity: '0' },
+					'100%': { transform: 'scale(1)', opacity: '1' }
 				}
 			},
 			animation: {
@@ -109,7 +116,8 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out',
 				'fade-out': 'fade-out 0.5s ease-out',
 				'slide-in': 'slide-in 0.5s ease-out',
-				'slide-out': 'slide-out 0.5s ease-out'
+				'slide-out': 'slide-out 0.5s ease-out',
+				'scale-up': 'scale-up 0.5s ease-out'
 			}
 		}
 	},
