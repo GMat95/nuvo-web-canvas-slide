@@ -2,7 +2,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
-	darkMode: ["class"],
+	darkMode: [], // Removed dark mode
 	content: [
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
@@ -17,14 +17,14 @@ export default {
 			screens: {
 				'2xl': '1400px'
 			}
-		},
-		extend: {
-			colors: {
-				border: 'hsl(var(--border))',
-				input: 'hsl(var(--input))',
-				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
-				foreground: 'hsl(var(--foreground))',
+		  },
+		  extend: {
+		    colors: {
+		      border: 'hsl(var(--border))',
+		      input: 'hsl(var(--input))',
+		      ring: 'hsl(var(--ring))',
+		      background: '#FFFFFF', // Enforce white background
+		      foreground: '#000000', // Enforce black foreground
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

@@ -8,6 +8,7 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 0%; /* Black */
+    --project-text-color: #FFFFFF; /* White text for project cards */
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
