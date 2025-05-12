@@ -69,7 +69,7 @@ const Hero = () => {
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-nuvo-blue/10 dark:bg-nuvo-blue/20 rounded-full animate-pulse" style={{ animationDelay: "1s" }}></div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-br from-nuvo-purple/20 to-nuvo-blue/20 rounded-full blur-3xl"></div>
               <img
-                src="https://images.unsplash.com/photo-1520094481912-968fc0a1c087?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1584187167940-d1efac179cb7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Creative digital agency"
                 className="w-full max-w-md rounded-lg shadow-xl relative z-10 hover:shadow-2xl transition-all duration-500"
               />
