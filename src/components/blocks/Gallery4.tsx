@@ -77,7 +77,8 @@ const Gallery4 = ({
   title = "Case Studies",
   description = "Discover how leading companies and developers are leveraging modern web technologies to build exceptional digital experiences. These case studies showcase real-world applications and success stories.",
   items = data,
-}: Gallery4Props) => {
+  style,
+}: Gallery4Props & { style?: React.CSSProperties }) => {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
@@ -130,7 +131,7 @@ const Gallery4 = ({
   const numScrollIndicators = Math.ceil(items.length / (numVisibleItems || 1)) + 1; 
 
   return (
-    <section className="py-32">
+    <section className="py-32" style={style}>
       <div className="container mx-auto">
         <div className="mb-8 flex items-end justify-between md:mb-14 lg:mb-16">
           <div className="flex flex-col gap-4">
@@ -192,7 +193,7 @@ const Gallery4 = ({
 :start_line:163
 -------
                     <div className="absolute inset-0 h-full bg-[linear-gradient(hsl(var(--primary)/0),hsl(var(--primary)/0.4),hsl(var(--primary)/0.8)_100%)] mix-blend-multiply" />
-                    <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-black md:p-8">
+                    <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-[var(--project-card-text-color)] md:p-8">
                       <div className="mb-2 pt-4 text-xl font-semibold md:mb-3 md:pt-4 lg:pt-4">
                         {item.title}
                       </div>
@@ -225,6 +226,12 @@ const Gallery4 = ({
       </div>
     </section>
   );
+};
+
+Gallery4.defaultProps = {
+  style: {
+    "--project-card-text-color": "white",
+  },
 };
 
 export { Gallery4 };
