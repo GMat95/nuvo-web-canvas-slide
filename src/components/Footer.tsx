@@ -25,8 +25,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
-            <a href="#home" className="text-white font-bold text-2xl md:text-3xl">
-              NUVO<span className="text-nuvo-purple">.</span>
+            <a href="#domov" className="text-white font-bold text-2xl md:text-3xl">
+              Edge<span className="text-emerald-500">.</span>
             </a>
             <p className="mt-4 text-gray-400">
               Modern tech solutions for local businesses. We help you grow with cutting-edge technology and data-driven strategies.
@@ -36,23 +36,21 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-xl mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-gray-400 hover:text-nuvo-purple transition-colors">Home</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-nuvo-purple transition-colors">Services</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-nuvo-purple transition-colors">About</a></li>
-              <li><a href="#process" className="text-gray-400 hover:text-nuvo-purple transition-colors">Process</a></li>
-              <li><a href="#portfolio" className="text-gray-400 hover:text-nuvo-purple transition-colors">Portfolio</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-nuvo-purple transition-colors">Contact</a></li>
+              <li><a href="#domov" className="text-gray-400 hover:text-emerald-500 transition-colors">Domov</a></li>
+              <li><a href="#storitve" className="text-gray-400 hover:text-emerald-500 transition-colors">Storitve</a></li>
+              <li><a href="#o-nas" className="text-gray-400 hover:text-emerald-500 transition-colors">O nas</a></li>
+              <li><a href="#projekti" className="text-gray-400 hover:text-emerald-500 transition-colors">Projekti</a></li>
+              <li><a href="#kontakt" className="text-gray-400 hover:text-emerald-500 transition-colors">Kontakt</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-semibold text-xl mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#services" className="text-gray-400 hover:text-nuvo-purple transition-colors">Website Development</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-nuvo-purple transition-colors">Performance Optimization</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-nuvo-purple transition-colors">IT Support</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-nuvo-purple transition-colors">Python Development</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-nuvo-purple transition-colors">Data Analysis</a></li>
+              <li><a href="#storitve" className="text-gray-400 hover:text-emerald-500 transition-colors">Website Development</a></li>
+              <li><a href="#storitve" className="text-gray-400 hover:text-emerald-500 transition-colors">Performance Optimization</a></li>
+              <li><a href="#storitve" className="text-gray-400 hover:text-emerald-500 transition-colors">IT Support</a></li>
+              <li><a href="#storitve" className="text-gray-400 hover:text-emerald-500 transition-colors">Python Development</a></li>
               <li><a href="#services" className="text-gray-400 hover:text-nuvo-purple transition-colors">Model Building</a></li>
             </ul>
           </div>

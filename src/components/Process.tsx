@@ -7,33 +7,33 @@ const Process = () => {
   const steps = [
     {
       number: "01",
-      title: t("process.step1.title"),
-      description: t("process.step1.description"),
+      title: "Odkritje",
+      description: "Začnemo z razumevanjem vašega podjetja, ciljev in izzivov s podrobnim posvetovanjem.",
     },
     {
       number: "02",
-      title: t("process.step2.title"),
-      description: t("process.step2.description"),
+      title: "Strategija",
+      description: "Naša ekipa razvije prilagojeno strategijo in načrt rešitve v skladu z vašimi poslovnimi cilji.",
     },
     {
       number: "03",
-      title: t("process.step3.title"),
-      description: t("process.step3.description"),
+      title: "Oblikovanje & Razvoj",
+      description: "Ustvarjamo in gradimo vašo rešitev s pozornostjo na podrobnosti, zagotavljamo kakovost in učinkovitost.",
     },
     {
       number: "04",
-      title: t("process.step4.title"),
-      description: t("process.step4.description"),
+      title: "Testiranje",
+      description: "Temeljito testiranje zagotavlja, da vaša rešitev deluje brezhibno na vseh platformah in napravah.",
     },
     {
       number: "05",
-      title: t("process.step5.title"),
-      description: t("process.step5.description"),
+      title: "Zagon",
+      description: "Skrbno uvedemo vašo rešitev in zagotavljamo podporo v kritični fazi zagona.",
     },
     {
       number: "06",
-      title: t("process.step6.title"),
-      description: t("process.step6.description"),
+      title: "Optimizacija",
+      description: "Nenehno izboljševanje in optimizacija omogočata, da vaša rešitev deluje kar najbolje.",
     },
   ];
 
@@ -42,14 +42,14 @@ const Process = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-nuvo-dark mb-4">
-            {t("process.title").split(" ").map((word, i) => (
+            {"Naš proces".split(" ").map((word, i) => (
               <span key={i} className={i === 1 ? "text-nuvo-purple" : ""}>
                 {word}{" "}
               </span>
             ))}
           </h2>
           <p className="text-nuvo-gray">
-            {t("process.description")}
+            Sledimo strukturiranemu pristopu, da zagotovimo učinkovito izvedbo vašega projekta in presežemo pričakovanja.
           </p>
         </div>
 
