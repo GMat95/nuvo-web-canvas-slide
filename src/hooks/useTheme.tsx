@@ -13,11 +13,11 @@ type ThemeContextType = {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
+  // Default to light theme instead of checking system preferences
   const [theme, setTheme] = useState(() => {
-    // Check for saved theme in localStorage
     if (typeof window !== "undefined") {
       const savedTheme = localStorage.getItem("nuvo-theme");
-      return savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      return savedTheme || "light";
     }
     return "light";
   });

@@ -5,7 +5,7 @@ const About = () => {
   const { t } = useLanguage();
   
   return (
-    <section id="about" className="section-padding bg-nuvo-light dark:bg-nuvo-dark-accent">
+    <section id="about" className="section-padding bg-nuvo-light">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
@@ -20,29 +20,29 @@ const About = () => {
           </div>
           
           <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-nuvo-dark dark:text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-nuvo-dark mb-6">
               {t("about.title")} <span className="text-nuvo-purple">NUVO</span>
             </h2>
             
-            <p className="text-nuvo-gray dark:text-gray-300 mb-6">
+            <p className="text-nuvo-gray mb-6">
               {t("about.description")}
             </p>
             
-            <p className="text-nuvo-gray dark:text-gray-300 mb-6">
+            <p className="text-nuvo-gray mb-6">
               {t("about.description2")}
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="animate-[fade-in_0.5s_ease-out]">
-                <h3 className="text-xl font-semibold text-nuvo-dark dark:text-white mb-2">{t("about.mission.title")}</h3>
-                <p className="text-nuvo-gray dark:text-gray-300">
+                <h3 className="text-xl font-semibold text-nuvo-dark mb-2">{t("about.mission.title")}</h3>
+                <p className="text-nuvo-gray">
                   {t("about.mission.description")}
                 </p>
               </div>
               
               <div className="animate-[fade-in_0.5s_ease-out_0.3s_forwards] opacity-0">
-                <h3 className="text-xl font-semibold text-nuvo-dark dark:text-white mb-2">{t("about.vision.title")}</h3>
-                <p className="text-nuvo-gray dark:text-gray-300">
+                <h3 className="text-xl font-semibold text-nuvo-dark mb-2">{t("about.vision.title")}</h3>
+                <p className="text-nuvo-gray">
                   {t("about.vision.description")}
                 </p>
               </div>

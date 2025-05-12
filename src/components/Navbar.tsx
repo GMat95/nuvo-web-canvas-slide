@@ -71,12 +71,12 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled 
-          ? "dark:bg-nuvo-dark-bg bg-white py-3 shadow-md dark:shadow-[0_4px_12px_-2px_rgba(0,0,0,0.5)]" 
+          ? "bg-white py-3 shadow-md" 
           : "bg-transparent py-6"
       )}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-        <a href="#home" className="text-nuvo-dark dark:text-white font-bold text-2xl md:text-3xl animate-fade-in">
+        <a href="#home" className="text-nuvo-dark font-bold text-2xl md:text-3xl animate-fade-in">
           NUVO<span className="text-nuvo-purple">.</span>
         </a>
 
@@ -88,7 +88,7 @@ const Navbar = () => {
                 <NavigationMenuItem key={item.name} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                   <NavigationMenuLink 
                     asChild 
-                    className="hover-underline-animation text-nuvo-dark dark:text-white text-sm font-medium"
+                    className="hover-underline-animation text-nuvo-dark text-sm font-medium"
                   >
                     <a href={item.href} onClick={handleNavClick}>
                       {item.name}
@@ -130,19 +130,19 @@ const Navbar = () => {
           </Button>
         </nav>
 
-        {/* Mobile menu button */}
+        {/* Mobile menu button - FIXED to be more visible */}
         <div className="md:hidden flex items-center space-x-4">
           {/* Language Toggle for Mobile */}
           <button 
             onClick={handleLanguageToggle}
-            className="text-nuvo-dark dark:text-white border border-nuvo-purple rounded-md px-2 py-1 text-sm"
+            className="text-nuvo-dark border border-nuvo-purple rounded-md px-2 py-1 text-sm"
           >
             {language === "en" ? "EN" : "SLO"}
           </button>
           
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="text-nuvo-dark dark:text-white p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
+            className="text-nuvo-dark p-2 hover:bg-gray-100 rounded-md transition-colors z-50"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -150,10 +150,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation - FIXED visibility issues */}
       <div 
         className={cn(
-          "fixed top-[60px] left-0 right-0 bg-white dark:bg-nuvo-dark-bg shadow-md md:hidden transition-transform duration-300 ease-in-out z-40",
+          "fixed top-[60px] left-0 right-0 bg-white shadow-md md:hidden transition-transform duration-300 ease-in-out z-40",
           isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
         )}
       >
@@ -164,7 +164,7 @@ const Navbar = () => {
                 key={item.name}
                 href={item.href}
                 onClick={handleNavClick}
-                className="text-nuvo-dark dark:text-white hover:text-nuvo-purple dark:hover:text-nuvo-purple py-2 px-4 animate-fade-in"
+                className="text-nuvo-dark hover:text-nuvo-purple py-2 px-4 animate-fade-in"
               >
                 {item.name}
               </a>
