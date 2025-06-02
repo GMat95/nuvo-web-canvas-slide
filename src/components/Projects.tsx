@@ -41,18 +41,6 @@ const Projects = () => {
       ],
       category: "Branding",
       technologies: ["Figma", "Adobe Suite", "WordPress", "Three.js", "PHP"]
-    },
-    {
-      id: "budget-tracking",
-      title: t("Minimalistična Aplikacija za Sledenje Proračuna"),
-      description: t("Čista, osredotočena aplikacija za sledenje proračuna, zasnovana z mislijo na preprostost. Črno-beli vmesnik z minimalnimi barvnimi poudarki pomaga uporabnikom osredotočiti se na njihove finančne podatke brez motenj."),
-      mainImage: "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?q=80&w=1974&auto=format&fit=crop",
-      additionalImages: [
-        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1974&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1974&auto=format&fit=crop"
-      ],
-      category: "Web Application",
-      technologies: ["React", "TypeScript", "Redux", "Firebase", "ChartJS"]
     }
   ];
 

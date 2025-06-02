@@ -227,7 +227,32 @@ const translations: Translations = {
     sl: "je bil dodan v naš novičnik." 
   },
   "PROJEKT": { en: "PROJECT", sl: "PROJEKT" },
-  "Tehnologije": { en: "Technologies", sl: "Tehnologije" }
+  "Tehnologije": { en: "Technologies", sl: "Tehnologije" },
+  
+  // Testimonials translations
+  "Testimonials": { en: "Testimonials", sl: "Mnenja strank" },
+  "See what our clients say about working with us and the results we've achieved together.": {
+    en: "See what our clients say about working with us and the results we've achieved together.",
+    sl: "Poglejte, kaj pravijo naše stranke o sodelovanju z nami in rezultatih, ki smo jih dosegli skupaj."
+  },
+  "Ana Novak": { en: "Ana Novak", sl: "Ana Novak" },
+  "Marko Petrič": { en: "Marko Petrič", sl: "Marko Petrič" },
+  "Sara Kralj": { en: "Sara Kralj", sl: "Sara Kralj" },
+  "Lokalna Restavracija": { en: "Local Restaurant", sl: "Lokalna Restavracija" },
+  "Tech Startup": { en: "Tech Startup", sl: "Tech Startup" },
+  "E-trgovina": { en: "E-commerce Store", sl: "E-trgovina" },
+  "EDGE je preoblikoval našo spletno prisotnost. Nova spletna stran je povečala naše rezervacije za 150% v prvem mesecu. Njihova pozornost na podrobnosti in razumevanje naših potreb je bilo izjemno.": {
+    en: "EDGE transformed our online presence. The new website increased our reservations by 150% in the first month. Their attention to detail and understanding of our needs was exceptional.",
+    sl: "EDGE je preoblikoval našo spletno prisotnost. Nova spletna stran je povečala naše rezervacije za 150% v prvem mesecu. Njihova pozornost na podrobnosti in razumevanje naših potreb je bilo izjemno."
+  },
+  "Sodelovanje z EDGE je bilo game-changer za naš startup. Njihova tehnična ekspertiza in kreativni pristop sta nam pomagala zgraditi platformo, ki naše uporabnike navdušuje vsak dan.": {
+    en: "Working with EDGE was a game-changer for our startup. Their technical expertise and creative approach helped us build a platform that delights our users every day.",
+    sl: "Sodelovanje z EDGE je bilo game-changer za naš startup. Njihova tehnična ekspertiza in kreativni pristop sta nam pomagala zgraditi platformo, ki naše uporabnike navdušuje vsak dan."
+  },
+  "Naša e-trgovina je doživela revolucijo zahvaljujoč EDGE. Optimizacije zmogljivosti so zmanjšale čas nalaganja za 70%, prodaja pa se je povečala za 200%. Priporočam vsem!": {
+    en: "Our e-commerce store experienced a revolution thanks to EDGE. Performance optimizations reduced loading time by 70%, and sales increased by 200%. I recommend them to everyone!",
+    sl: "Naša e-trgovina je doživela revolucijo zahvaljujoč EDGE. Optimizacije zmogljivosti so zmanjšale čas nalaganja za 70%, prodaja pa se je povečala za 200%. Priporočam vsem!"
+  }
 };
 
 interface LanguageContextType {
