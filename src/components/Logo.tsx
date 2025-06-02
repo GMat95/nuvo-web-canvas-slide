@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 export const Logo = ({ className = "", animated = false }: { className?: string; animated?: boolean }) => {
@@ -17,7 +16,7 @@ export const Logo = ({ className = "", animated = false }: { className?: string;
             transition={{ delay: 0.2, duration: 0.5 }}
             className="inline-block"
           >
-            E
+            S
           </motion.span>
           <motion.span
             initial={{ y: -20, opacity: 0 }}
@@ -25,7 +24,7 @@ export const Logo = ({ className = "", animated = false }: { className?: string;
             transition={{ delay: 0.3, duration: 0.5 }}
             className="inline-block"
           >
-            D
+            F
           </motion.span>
           <motion.span
             initial={{ y: 20, opacity: 0 }}
@@ -33,7 +32,7 @@ export const Logo = ({ className = "", animated = false }: { className?: string;
             transition={{ delay: 0.4, duration: 0.5 }}
             className="inline-block"
           >
-            G
+            U
           </motion.span>
           <motion.span
             initial={{ x: 20, opacity: 0 }}
@@ -41,15 +40,34 @@ export const Logo = ({ className = "", animated = false }: { className?: string;
             transition={{ delay: 0.5, duration: 0.5 }}
             className="inline-block"
           >
-            E
+            M
           </motion.span>
-          <motion.span 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7, duration: 0.3 }}
-            className="absolute -top-1 -right-2 text-xs"
+          <motion.span
+            initial={{ x: -20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="inline-block"
           >
-            ®
+            A
+          </motion.span>
+          <motion.span
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            className="inline-block"
+          >
+            T
+          </motion.span>
+          <motion.span
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            className="inline-block"
+          >
+            O
+          </motion.span>
+          <motion.span className="absolute -top-1 -right-2 text-xs">
+            
           </motion.span>
         </motion.div>
       </div>
@@ -57,9 +75,7 @@ export const Logo = ({ className = "", animated = false }: { className?: string;
   }
   
   return (
-    <div className={`font-bold text-2xl relative ${className}`}>
-      EDGE<span className="absolute -top-1 -right-2 text-xs">®</span>
-    </div>
+    <img src="SFUMATO_logo.png" alt="SFUMATO Logo" className={`h-8 ${className}`} />
   );
 };
 

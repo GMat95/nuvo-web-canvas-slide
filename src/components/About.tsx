@@ -33,11 +33,11 @@ const About = () => {
               }}
               className="relative"
             >
-              <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-black"></div>
+              <div className="absolute -left-6 -bottom-6 w-full h-full border-2 border-black"></div>
               <img
-                src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
+                src="https://images.unsplash.com/photo-1712757496231-0473fdbd4ed6?q=80&w=1927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt={language === 'sl' ? "Minimalistična arhitektura" : "Minimalist architecture"}
-                className="w-full rounded-none shadow-xl relative z-10"
+                className="w-full rounded-none shadow-xl relative z-10 max-w-md"
               />
             </motion.div>
           </div>
@@ -53,7 +53,7 @@ const About = () => {
               variants={fadeInUp}
               className="text-3xl md:text-4xl font-bold text-black mb-6"
             >
-              {t("O nas")} <span className="font-light">EDGE</span>
+              {t("O nas")} <span className="font-light">SFUMATO</span>
             </motion.h2>
             
             <motion.p 
@@ -61,7 +61,7 @@ const About = () => {
               variants={fadeInUp}
               className="text-gray-700 mb-6"
             >
-              {t("NUVO je napredno usmerjena digitalna agencija, osredotočena na pomoč lokalnim podjetjem pri uspehu v digitalnem okolju. Naša ekipa združuje tehnično znanje s kreativnimi rešitvami za zagotavljanje izjemnih rezultatov za naše stranke.")}
+              {t("SFUMATO je napredno usmerjena digitalna agencija, osredotočena na pomoč lokalnim podjetjem pri uspehu v digitalnem okolju. Naša ekipa združuje tehnično znanje s kreativnimi rešitvami za zagotavljanje izjemnih rezultatov za naše stranke.")}
             </motion.p>
             
             <motion.p 

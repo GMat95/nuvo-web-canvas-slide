@@ -105,7 +105,7 @@ const Hero = () => {
                 transition={{ delay: 0.9, duration: 0.7 }}
               ></motion.div>
               <img
-                src="https://images.unsplash.com/photo-1486718448742-163732cd1544?q=80&w=1974&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1738090236490-fdfaec29da06?q=80&w=1957&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Minimalist architecture"
                 className="w-full max-w-md relative z-10 hover:shadow-2xl transition-all duration-500"
               />

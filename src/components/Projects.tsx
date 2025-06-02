@@ -8,7 +8,7 @@ const Projects = () => {
   const projects: ProjectProps[] = [
     {
       id: "shadcn-ui",
-      title: "EDGE Minimalist E-Commerce Platform",
+      title: "SFUMATO Minimalist E-Commerce Platform",
       description: "A sleek, black and white e-commerce platform designed with a focus on typography and whitespace. The minimalist design emphasizes product photography and creates an elegant shopping experience.",
       mainImage: "https://images.unsplash.com/photo-1486718448742-163732cd1544?q=80&w=1974&auto=format&fit=crop",
       additionalImages: [
