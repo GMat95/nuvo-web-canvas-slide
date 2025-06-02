@@ -81,24 +81,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             ))}
           </div>
         </div>
-        
-        <motion.a
-          href="#"
-          className="self-start inline-flex items-center text-black font-medium group"
-          whileHover={{ x: 5 }}
-          transition={{ duration: 0.2 }}
-        >
-          View Project
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="ml-2 w-4 h-4 transition-transform duration-200 transform group-hover:translate-x-1" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
-        </motion.a>
       </div>
     </motion.div>
   );

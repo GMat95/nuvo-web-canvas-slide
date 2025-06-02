@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect } from "react";
 
 type Language = "en" | "sl";
@@ -17,6 +16,7 @@ const translations: Translations = {
   "O nas": { en: "About", sl: "O nas" },
   "Projekti": { en: "Projects", sl: "Projekti" },
   "Kontakt": { en: "Contact", sl: "Kontakt" },
+  "Cene": { en: "Pricing", sl: "Cene" },
   "Naše poslanstvo": { en: "Our Mission", sl: "Naše poslanstvo" },
   "Naša vizija": { en: "Our Vision", sl: "Naša vizija" },
   "Opolnomočiti lokalna podjetja s tehnološkimi rešitvami, ki spodbujajo rast in uspeh.": { 
@@ -27,7 +27,7 @@ const translations: Translations = {
     en: "To be a trusted technology partner for local businesses across the country.", 
     sl: "Biti zaupanja vreden tehnološki partner za lokalna podjetja po vsej državi." 
   },
-  "NUVO je napredno usmerjena digitalna agencija, osredotočena na pomoč lokalnim podjetjem pri uspehu v digitalnem okolju. Naša ekipa združuje tehnično znanje s kreativnimi rešitvami za zagotavljanje izjemnih rezultatov za naše stranke.": {
+  "EDGE je napredno usmerjena digitalna agencija, osredotočena na pomoč lokalnim podjetjem pri uspehu v digitalnem okolju. Naša ekipa združuje tehnično znanje s kreativnimi rešitvami za zagotavljanje izjemnih rezultatov za naše stranke.": {
     en: "EDGE is a forward-thinking digital agency focused on helping local businesses succeed in the digital landscape. Our team combines technical expertise with creative solutions to deliver exceptional results for our clients.",
     sl: "EDGE je napredno usmerjena digitalna agencija, osredotočena na pomoč lokalnim podjetjem pri uspehu v digitalnem okolju. Naša ekipa združuje tehnično znanje s kreativnimi rešitvami za zagotavljanje izjemnih rezultatov za naše stranke."
   },
@@ -45,7 +45,6 @@ const translations: Translations = {
   },
   "Začnite zdaj": { en: "Get Started", sl: "Začnite zdaj" },
   "Naše storitve": { en: "Our Services", sl: "Naše storitve" },
-  "O nas": { en: "About Us", sl: "O nas" },
   "Website Development": { en: "Website Development", sl: "Razvoj spletnih strani" },
   "Custom, mobile-responsive websites designed to attract and convert visitors into customers.": {
     en: "Custom, mobile-responsive websites designed to attract and convert visitors into customers.",
@@ -121,6 +120,67 @@ const translations: Translations = {
     en: "Discover how leading companies and developers are leveraging modern web technologies to build exceptional digital experiences. These case studies showcase real-world applications and success stories.",
     sl: "Odkrijte, kako vodilna podjetja in razvijalci izkoriščajo sodobne spletne tehnologije za ustvarjanje izjemnih digitalnih izkušenj. Ti primeri prikazujejo resnične aplikacije in zgodbe o uspehu."
   },
+  // Project translations
+  "Minimalistična E-trgovinska Platforma": { en: "Minimalist E-Commerce Platform", sl: "Minimalistična E-trgovinska Platforma" },
+  "Elegantna črno-bela e-trgovinska platforma z osredotočenostjo na tipografijo in bel prostor. Minimalistični dizajn poudarja fotografijo izdelkov in ustvarja elegantno nakupovalno izkušnjo.": {
+    en: "An elegant black and white e-commerce platform focused on typography and whitespace. The minimalist design emphasizes product photography and creates an elegant shopping experience.",
+    sl: "Elegantna črno-bela e-trgovinska platforma z osredotočenostjo na tipografijo in bel prostor. Minimalistični dizajn poudarja fotografijo izdelkov in ustvarja elegantno nakupovalno izkušnjo."
+  },
+  "Monohromatski Portfelj za Fotografski Studio": { en: "Monochrome Portfolio for Photography Studio", sl: "Monohromatski Portfelj za Fotografski Studio" },
+  "Monohromatska portfeljska spletna stran za profesionalni fotografski studio. Dizajn uporablja kontrast in razmike za ustvarjanje galerijske izkušnje, ki fotografiji omogoča, da zasije.": {
+    en: "A monochromatic portfolio website for a professional photography studio. The design uses contrast and spacing to create a gallery-like experience that lets the photography take center stage.",
+    sl: "Monohromatska portfeljska spletna stran za profesionalni fotografski studio. Dizajn uporablja kontrast in razmike za ustvarjanje galerijske izkušnje, ki fotografiji omogoča, da zasije."
+  },
+  "Korporativna Identiteta Arhitekturnega Podjetja": { en: "Architectural Firm Corporate Identity", sl: "Korporativna Identiteta Arhitekturnega Podjetja" },
+  "Celovita blagovna identiteta in spletna stran za sodobno arhitekturno podjetje. Dizajn poudarja čiste linije, negativni prostor in arhitekturne elemente, ki odražajo estetsko filozofijo podjetja.": {
+    en: "A comprehensive brand identity and website for a modern architectural firm. The design emphasizes clean lines, negative space, and architectural elements to reflect the firm's aesthetic philosophy.",
+    sl: "Celovita blagovna identiteta in spletna stran za sodobno arhitekturno podjetje. Dizajn poudarja čiste linije, negativni prostor in arhitekturne elemente, ki odražajo estetsko filozofijo podjetja."
+  },
+  "Minimalistična Aplikacija za Sledenje Proračuna": { en: "Minimalist Budget Tracking Application", sl: "Minimalistična Aplikacija za Sledenje Proračuna" },
+  "Čista, osredotočena aplikacija za sledenje proračuna, zasnovana z mislijo na preprostost. Črno-beli vmesnik z minimalnimi barvnimi poudarki pomaga uporabnikom osredotočiti se na njihove finančne podatke brez motenj.": {
+    en: "A clean, focused budget tracking app designed with simplicity in mind. The black and white interface with minimal color accents helps users focus on their financial data without distractions.",
+    sl: "Čista, osredotočena aplikacija za sledenje proračuna, zasnovana z mislijo na preprostost. Črno-beli vmesnik z minimalnimi barvnimi poudarki pomaga uporabnikom osredotočiti se na njihove finančne podatke brez motenj."
+  },
+  // Pricing translations
+  "Preprosto, Transparentno Cenovanje": { en: "Simple, Transparent Pricing", sl: "Preprosto, Transparentno Cenovanje" },
+  "Izberite načrt, ki vam ustreza. Vsi načrti vključujejo dostop do naše platforme, orodij za generiranje potencialnih strank in namenske podpore.": {
+    en: "Choose the plan that works for you. All plans include access to our platform, lead generation tools, and dedicated support.",
+    sl: "Izberite načrt, ki vam ustreza. Vsi načrti vključujejo dostop do naše platforme, orodij za generiranje potencialnih strank in namenske podpore."
+  },
+  "Letno račun (Privarčuj 20%)": { en: "Annual billing (Save 20%)", sl: "Letno račun (Privarčuj 20%)" },
+  "STARTER": { en: "STARTER", sl: "ZAČETNI" },
+  "PROFESSIONAL": { en: "PROFESSIONAL", sl: "PROFESIONALNI" },
+  "ENTERPRISE": { en: "ENTERPRISE", sl: "PODJETNIŠKI" },
+  "na mesec": { en: "per month", sl: "na mesec" },
+  "Račun letno": { en: "billed annually", sl: "Račun letno" },
+  "Priljubljeno": { en: "Popular", sl: "Priljubljeno" },
+  "Do 10 projektov": { en: "Up to 10 projects", sl: "Do 10 projektov" },
+  "Osnovna analitika": { en: "Basic analytics", sl: "Osnovna analitika" },
+  "48-urni odzivni čas podpore": { en: "48-hour support response time", sl: "48-urni odzivni čas podpore" },
+  "Omejen dostop do API": { en: "Limited API access", sl: "Omejen dostop do API" },
+  "Skupnostna podpora": { en: "Community support", sl: "Skupnostna podpora" },
+  "Neomejeni projekti": { en: "Unlimited projects", sl: "Neomejeni projekti" },
+  "Napredna analitika": { en: "Advanced analytics", sl: "Napredna analitika" },
+  "24-urni odzivni čas podpore": { en: "24-hour support response time", sl: "24-urni odzivni čas podpore" },
+  "Poln dostop do API": { en: "Full API access", sl: "Poln dostop do API" },
+  "Prednostna podpora": { en: "Priority support", sl: "Prednostna podpora" },
+  "Sodelovanje ekipe": { en: "Team collaboration", sl: "Sodelovanje ekipe" },
+  "Integracije po meri": { en: "Custom integrations", sl: "Integracije po meri" },
+  "Vse v Professional": { en: "Everything in Professional", sl: "Vse v Professional" },
+  "Rešitve po meri": { en: "Custom solutions", sl: "Rešitve po meri" },
+  "Namenski upravitelj računa": { en: "Dedicated account manager", sl: "Namenski upravitelj računa" },
+  "1-urni odzivni čas podpore": { en: "1-hour support response time", sl: "1-urni odzivni čas podpore" },
+  "SSO avtentikacija": { en: "SSO Authentication", sl: "SSO avtentikacija" },
+  "Napredna varnost": { en: "Advanced security", sl: "Napredna varnost" },
+  "Pogodbe po meri": { en: "Custom contracts", sl: "Pogodbe po meri" },
+  "SLA sporazum": { en: "SLA agreement", sl: "SLA sporazum" },
+  "Začni brezplačni preizkus": { en: "Start Free Trial", sl: "Začni brezplačni preizkus" },
+  "Začni": { en: "Get Started", sl: "Začni" },
+  "Kontaktiraj prodajo": { en: "Contact Sales", sl: "Kontaktiraj prodajo" },
+  "Popolno za posameznike in majhne projekte": { en: "Perfect for individuals and small projects", sl: "Popolno za posameznike in majhne projekte" },
+  "Idealno za rastoče ekipe in podjetja": { en: "Ideal for growing teams and businesses", sl: "Idealno za rastoče ekipe in podjetja" },
+  "Za velike organizacije s specifičnimi potrebami": { en: "For large organizations with specific needs", sl: "Za velike organizacije s specifičnimi potrebami" },
+  // ... keep existing contact translations
   "Get In Touch": { en: "Get In Touch", sl: "Stopite v stik" },
   "Have a project in mind or want to learn more about our services? Contact us today!": {
     en: "Have a project in mind or want to learn more about our services? Contact us today!",

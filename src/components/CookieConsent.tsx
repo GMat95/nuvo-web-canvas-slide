@@ -56,21 +56,21 @@ export default function CookieConsent({ language }: CookieConsentProps) {
         <div className="flex flex-wrap items-center gap-2">
           <Button 
             onClick={handleAccept} 
-            className="bg-white text-black hover:bg-gray-200 min-w-[100px]"
+            className="bg-white text-black hover:bg-gray-200 min-w-[100px] font-medium"
           >
             {content.accept}
           </Button>
           <Button 
             onClick={handleDecline} 
             variant="outline" 
-            className="border-white text-white hover:bg-gray-800 min-w-[100px]"
+            className="border-white text-white hover:bg-gray-800 hover:text-white min-w-[100px] font-medium"
           >
             {content.decline}
           </Button>
           <Link to="/cookie-policy">
             <Button 
               variant="link" 
-              className="text-white hover:text-gray-300"
+              className="text-white hover:text-gray-300 font-medium"
             >
               {content.policy}
             </Button>
