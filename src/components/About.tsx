@@ -33,7 +33,7 @@ const About = () => {
               }}
               className="relative"
             >
-              <div className="absolute -left-6 -bottom-6 w-full h-full border-2 border-black"></div>
+              <div className="absolute -right-6 -bottom-6 w-full h-full border-2 border-black"></div>
               <img
                 src="https://images.unsplash.com/photo-1712757496231-0473fdbd4ed6?q=80&w=1927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt={language === 'sl' ? "Minimalistična arhitektura" : "Minimalist architecture"}
