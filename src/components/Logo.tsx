@@ -8,7 +8,7 @@ export const Logo = ({ className = "", animated = false }: { className?: string;
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, type: "spring" }}
-          className="font-bold text-2xl relative"
+          className="font-bold text-2xl relative font-novecento-wide"
         >
           <motion.span
             initial={{ x: -20, opacity: 0 }}

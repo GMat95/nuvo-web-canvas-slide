@@ -19,6 +19,9 @@ export default {
 			}
 		  },
 		  extend: {
+		      fontFamily: {
+		        'novecento-wide': ['"Novecento Wide"', 'sans-serif'],
+		      },
 		    colors: {
 		      border: 'hsl(var(--border))',
 		      input: 'hsl(var(--input))',
