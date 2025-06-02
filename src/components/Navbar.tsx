@@ -10,11 +10,11 @@ export default function Navbar() {
   const { language, setLanguage, t } = useLanguage();
 
   const navItems = [
-    { label: t('Domov'), href: '#domov' },
-    { label: t('Storitve'), href: '#storitve' },
-    { label: t('O nas'), href: '#o-nas' },
-    { label: t('Projekti'), href: '#projekti' },
-    { label: t('Kontakt'), href: '#kontakt' }
+    { label: t('Domov'), href: '/' },
+    { label: t('Storitve'), href: '/#storitve' },
+    { label: t('O nas'), href: '/#o-nas' },
+    { label: t('Projekti'), href: '/#projekti' },
+    { label: t('Kontakt'), href: '/#kontakt' }
   ];
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#domov" className="flex items-center">
+        <a href="/" className="flex items-center">
           <Logo className="text-black" />
         </a>
         
@@ -95,7 +95,7 @@ export default function Navbar() {
       >
         <nav className="flex flex-col items-center gap-8 py-20">
           {navItems.map((item) => (
-            <a 
+            <a
               key={item.href}
               href={item.href}
               className="text-xl text-gray-800 hover:text-black font-medium"

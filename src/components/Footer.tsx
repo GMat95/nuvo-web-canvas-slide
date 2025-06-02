@@ -29,7 +29,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
-            <a href="#domov" className="text-white font-bold inline-block">
+            <a href="/" className="text-white font-bold inline-block">
               <Logo className="text-white" />
             </a>
             <p className="mt-4 text-gray-400">
@@ -42,22 +42,22 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-xl mb-4">{t("Quick Links")}</h3>
             <ul className="space-y-2">
-              <li><a href="#domov" className="text-gray-400 hover:text-white transition-colors">{t("Domov")}</a></li>
-              <li><a href="#storitve" className="text-gray-400 hover:text-white transition-colors">{t("Storitve")}</a></li>
-              <li><a href="#o-nas" className="text-gray-400 hover:text-white transition-colors">{t("O nas")}</a></li>
-              <li><a href="#projekti" className="text-gray-400 hover:text-white transition-colors">{t("Projekti")}</a></li>
-              <li><a href="#kontakt" className="text-gray-400 hover:text-white transition-colors">{t("Kontakt")}</a></li>
+              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">{t("Domov")}</a></li>
+              <li><a href="/#storitve" className="text-gray-400 hover:text-white transition-colors">{t("Storitve")}</a></li>
+              <li><a href="/#o-nas" className="text-gray-400 hover:text-white transition-colors">{t("O nas")}</a></li>
+              <li><a href="/#projekti" className="text-gray-400 hover:text-white transition-colors">{t("Projekti")}</a></li>
+              <li><a href="/#kontakt" className="text-gray-400 hover:text-white transition-colors">{t("Kontakt")}</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-semibold text-xl mb-4">{t("Services")}</h3>
             <ul className="space-y-2">
-              <li><a href="#storitve" className="text-gray-400 hover:text-white transition-colors">{t("Website Development")}</a></li>
-              <li><a href="#storitve" className="text-gray-400 hover:text-white transition-colors">{t("Performance Optimization")}</a></li>
-              <li><a href="#storitve" className="text-gray-400 hover:text-white transition-colors">{t("IT Support & Solutions")}</a></li>
-              <li><a href="#storitve" className="text-gray-400 hover:text-white transition-colors">{t("Python Development")}</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">{t("Model Building")}</a></li>
+              <li><a href="/#storitve" className="text-gray-400 hover:text-white transition-colors">{t("Website Development")}</a></li>
+              <li><a href="/#storitve" className="text-gray-400 hover:text-white transition-colors">{t("Performance Optimization")}</a></li>
+              <li><a href="/#storitve" className="text-gray-400 hover:text-white transition-colors">{t("IT Support & Solutions")}</a></li>
+              <li><a href="/#storitve" className="text-gray-400 hover:text-white transition-colors">{t("Python Development")}</a></li>
+              <li><a href="/#services" className="text-gray-400 hover:text-white transition-colors">{t("Model Building")}</a></li>
             </ul>
           </div>
           
