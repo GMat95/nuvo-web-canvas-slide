@@ -62,8 +62,7 @@ export default function CookieConsent({ language }: CookieConsentProps) {
           </Button>
           <Button 
             onClick={handleDecline} 
-            variant="outline" 
-            className="border-white text-white hover:bg-gray-800 hover:text-white min-w-[100px] font-medium"
+            className="bg-white text-black hover:bg-gray-200 min-w-[100px] font-medium"
           >
             {content.decline}
           </Button>

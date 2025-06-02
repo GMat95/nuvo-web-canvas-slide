@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion";
+import { useLanguage } from "@/hooks/useLanguage";
 
 export interface ProjectProps {
   id: string;
@@ -17,6 +18,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
+  const { t } = useLanguage();
   const isEven = index % 2 === 0;
 
   return (
@@ -64,12 +66,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       </div>
       
       <div className={`lg:w-1/2 order-2 ${isEven ? 'lg:order-2' : 'lg:order-1'} flex flex-col justify-center`}>
-        <span className="text-sm text-gray-500 mb-2">PROJECT {String(index + 1).padStart(2, '0')}</span>
+        <span className="text-sm text-gray-500 mb-2">{t("PROJEKT")} {String(index + 1).padStart(2, '0')}</span>
         <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">{project.title}</h3>
         <p className="text-gray-700 mb-6">{project.description}</p>
         
         <div className="mb-6">
-          <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-2">Technologies</h4>
+          <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-2">{t("Tehnologije")}</h4>
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech, i) => (
               <span 

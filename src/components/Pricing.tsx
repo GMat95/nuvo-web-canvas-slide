@@ -112,7 +112,7 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}
-              className={`relative bg-white border border-gray-200 p-8 ${
+              className={`relative bg-white border border-gray-200 p-8 flex flex-col ${
                 plan.popular ? 'border-black' : ''
               }`}
               initial={{ opacity: 0, y: 30 }}
@@ -137,7 +137,7 @@ const Pricing = () => {
                 <p className="text-sm text-gray-500">{t("Račun letno")}</p>
               </div>
 
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-8 flex-grow">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start">
                     <Check className="w-5 h-5 text-black mr-3 mt-0.5 flex-shrink-0" />
@@ -146,20 +146,22 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <Button 
-                variant={plan.buttonVariant}
-                className={`w-full ${
-                  plan.buttonVariant === 'default' 
-                    ? 'bg-black hover:bg-gray-800 text-white' 
-                    : 'border-black text-black hover:bg-black hover:text-white'
-                }`}
-              >
-                {plan.buttonText}
-              </Button>
+              <div className="mt-auto">
+                <Button 
+                  variant={plan.buttonVariant}
+                  className={`w-full mb-4 ${
+                    plan.buttonVariant === 'default' 
+                      ? 'bg-black hover:bg-gray-800 text-white' 
+                      : 'border-black text-black hover:bg-black hover:text-white'
+                  }`}
+                >
+                  {plan.buttonText}
+                </Button>
 
-              <p className="text-xs text-gray-500 mt-4 text-center">
-                {plan.description}
-              </p>
+                <p className="text-xs text-gray-500 text-center">
+                  {plan.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>

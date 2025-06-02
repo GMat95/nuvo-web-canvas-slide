@@ -225,7 +225,9 @@ const translations: Translations = {
   "has been added to our newsletter.": { 
     en: "has been added to our newsletter.", 
     sl: "je bil dodan v naš novičnik." 
-  }
+  },
+  "PROJEKT": { en: "PROJECT", sl: "PROJEKT" },
+  "Tehnologije": { en: "Technologies", sl: "Tehnologije" }
 };
 
 interface LanguageContextType {
