@@ -75,7 +75,7 @@ export const Logo = ({ className = "", animated = false }: { className?: string;
   }
   
   return (
-    <img src="SFUMATO_logo.png" alt="SFUMATO Logo" className={`h-8 ${className}`} />
+    <img src="./SFUMATO_logo.png" alt="SFUMATO Logo" className={`h-8 ${className}`} />
   );
 };
 
