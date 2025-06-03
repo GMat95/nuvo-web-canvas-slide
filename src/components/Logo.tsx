@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logo from "../../SFUMATO_logo.png";
 
 export const Logo = ({ className = "", animated = false }: { className?: string; animated?: boolean }) => {
   if (animated) {
@@ -75,7 +76,7 @@ export const Logo = ({ className = "", animated = false }: { className?: string;
   }
   
   return (
-    <img src="./SFUMATO_logo.png" alt="SFUMATO Logo" className={`h-8 ${className}`} />
+    <img src={logo} alt="SFUMATO Logo" className={`h-8 ${className}`} />
   );
 };
 
