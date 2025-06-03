@@ -8,7 +8,7 @@ const Projects = () => {
   const projects: ProjectProps[] = [
     {
       id: "ecommerce-platform",
-      title: t("Celostna grafična podoba in spletna stran Apartmaji Rossi"),
+      title: t("Celostna grafična podoba in spletna stran Apartmaji Rosi"),
       description: t("Elegantna črno-bela e-trgovinska platforma z osredotočenostjo na tipografijo in bel prostor. Minimalistični dizajn poudarja fotografijo izdelkov in ustvarja elegantno nakupovalno izkušnjo."),
       mainImage: "https://images.unsplash.com/photo-1486718448742-163732cd1544?q=80&w=1974&auto=format&fit=crop",
       additionalImages: [
