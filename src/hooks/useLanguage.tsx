@@ -12,6 +12,10 @@ interface Translations {
 // Translations dictionary
 const translations: Translations = {
   "Domov": { en: "Home", sl: "Domov" },
+  "Minimalizem, ki prepriča.": { en: "Minimalism that convinces.", sl: "Minimalizem, ki prepriča." },
+  "Oblikujemo sodobne, estetske in funkcionalne spletne strani, ki pripovedujejo vašo zgodbo. Minimalistično, premišljeno in brez odvečnosti – za znamke, ki želijo pustiti vtis.": { en: "We design modern, aesthetic, and functional websites that tell your story. Minimalist, thoughtful, and without redundancy - for brands that want to make an impression.", sl: "Oblikujemo sodobne, estetske in funkcionalne spletne strani, ki pripovedujejo vašo zgodbo. Minimalistično, premišljeno in brez odvečnosti – za znamke, ki želijo pustiti vtis." },
+  "Kontaktirajte nas": { en: "Contact Us", sl: "Kontaktirajte nas" },
+  "Naše storitve": { en: "Our Services", sl: "Naše storitve" },
   "Storitve": { en: "Services", sl: "Storitve" },
   "O nas": { en: "About", sl: "O nas" },
   "Projekti": { en: "Projects", sl: "Projekti" },
@@ -27,24 +31,22 @@ const translations: Translations = {
     en: "To be a trusted technology partner for local businesses across the country.", 
     sl: "Biti zaupanja vreden tehnološki partner za lokalna podjetja po vsej državi." 
   },
-  "EDGE je napredno usmerjena digitalna agencija, osredotočena na pomoč lokalnim podjetjem pri uspehu v digitalnem okolju. Naša ekipa združuje tehnično znanje s kreativnimi rešitvami za zagotavljanje izjemnih rezultatov za naše stranke.": {
-    en: "EDGE is a forward-thinking digital agency focused on helping local businesses succeed in the digital landscape. Our team combines technical expertise with creative solutions to deliver exceptional results for our clients.",
-    sl: "EDGE je napredno usmerjena digitalna agencija, osredotočena na pomoč lokalnim podjetjem pri uspehu v digitalnem okolju. Naša ekipa združuje tehnično znanje s kreativnimi rešitvami za zagotavljanje izjemnih rezultatov za naše stranke."
+  "SFUMATO je napredno usmerjena digitalna agencija, osredotočena na pomoč lokalnim podjetjem pri uspehu v digitalnem okolju. Naša ekipa združuje tehnično znanje s kreativnimi rešitvami za zagotavljanje izjemnih rezultatov za naše stranke.": {
+    en: "SFUMATO is a forward-thinking digital agency focused on helping local businesses succeed in the digital landscape. Our team combines technical expertise with creative solutions to deliver exceptional results for our clients.",
+    sl: "SFUMATO je napredno usmerjena digitalna agencija, osredotočena na pomoč lokalnim podjetjem pri uspehu v digitalnem okolju. Naša ekipa združuje tehnično znanje s kreativnimi rešitvami za zagotavljanje izjemnih rezultatov za naše stranke."
   },
   "Verjamemo, da si vsako podjetje, ne glede na velikost, zasluži dostop do najsodobnejše tehnologije in profesionalnih storitev, ki mu lahko pomagajo rasti in uspevati na današnjem konkurenčnem trgu.": {
     en: "We believe that every business, regardless of size, deserves access to cutting-edge technology and professional services that can help them grow and thrive in today's competitive market.",
     sl: "Verjamemo, da si vsako podjetje, ne glede na velikost, zasluži dostop do najsodobnejše tehnologije in profesionalnih storitev, ki mu lahko pomagajo rasti in uspevati na današnjem konkurenčnem trgu."
   },
-  "Preoblikujemo lokalna podjetja z modernimi tehnološkimi rešitvami": {
-    en: "Transforming local businesses with modern technology solutions",
-    sl: "Preoblikujemo lokalna podjetja z modernimi tehnološkimi rešitvami"
+  "Minimalizem, ki prepriča": {
+    en: "Minimalism that resonates.",
+    sl: "Minimalizem, ki prepriča."
   },
   "Ustvarjamo čudovite spletne strani, optimiziramo zmogljivost, nudimo IT podporo, razvijamo Python aplikacije in gradimo podatkovne modele za podjetja, ki želijo rasti.": {
     en: "We create beautiful websites, optimize performance, provide IT support, develop Python applications, and build data models for businesses looking to grow.",
     sl: "Ustvarjamo čudovite spletne strani, optimiziramo zmogljivost, nudimo IT podporo, razvijamo Python aplikacije in gradimo podatkovne modele za podjetja, ki želijo rasti."
   },
-  "Začnite zdaj": { en: "Get Started", sl: "Začnite zdaj" },
-  "Naše storitve": { en: "Our Services", sl: "Naše storitve" },
   "Website Development": { en: "Website Development", sl: "Razvoj spletnih strani" },
   "Custom, mobile-responsive websites designed to attract and convert visitors into customers.": {
     en: "Custom, mobile-responsive websites designed to attract and convert visitors into customers.",

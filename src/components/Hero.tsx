@@ -46,7 +46,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.7 }}
             >
-              {t("Preoblikujemo lokalna podjetja z modernimi tehnološkimi rešitvami")}
+              {t("Minimalizem, ki prepriča")}
             </motion.h1>
             
             <motion.p 
@@ -70,7 +70,7 @@ const Hero = () => {
                 size="lg"
               >
                 <a href="#kontakt" onClick={handleGetStartedClick}>
-                  {t("Začnite zdaj")}
+                  {t("Kontaktirajte nas")}
                 </a>
               </Button>
               <Button 
