@@ -43,9 +43,9 @@ const translations: Translations = {
     en: "Minimalism that resonates.",
     sl: "Minimalizem, ki prepriča."
   },
-  " Oblikujemo sodobne, estetske in funkcionalne spletne strani, ki pripovedujejo vašo zgodbo. Minimalistično, premišljeno in brez odvečnosti – za znamke, ki želijo pustiti vtis.": {
+  "Izdelujemo sodobne, estetske in funkcionalne spletne strani, ki pripovedujejo vašo zgodbo. Minimalistično in premišljeno – za znamke, ki želijo pustiti vtis.": {
     en: "We craft modern, aesthetic, and functional websites that tell your story. Minimalist, intentional, and free of clutter – for brands that want to leave a lasting impression.",
-    sl: "Oblikujemo sodobne, estetske in funkcionalne spletne strani, ki pripovedujejo vašo zgodbo. Minimalistično, premišljeno in brez odvečnosti – za znamke, ki želijo pustiti vtis."
+    sl: "Izdelujemo sodobne, estetske in funkcionalne spletne strani, ki pripovedujejo vašo zgodbo. Minimalistično in premišljeno – za znamke, ki želijo pustiti vtis."
   },
   "Website Development": { en: "Website Development", sl: "Razvoj spletnih strani" },
   "Custom, mobile-responsive websites designed to attract and convert visitors into customers.": {
