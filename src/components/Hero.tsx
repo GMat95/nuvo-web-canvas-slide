@@ -55,7 +55,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.7 }}
             >
-              {t("Izdelujemo sodobne, estetske in funkcionalne spletne strani, ki pripovedujejo vašo zgodbo. Minimalistično in premišljeno – za znamke, ki želijo pustiti vtis.")}
+              {t("Izdelujemo sodobne, estetske in funkcionalne spletne strani, ki pripovedujejo vašo zgodbo. Minimalistično in premišljeno – za podjetja, ki želijo pustiti vtis.")}
             </motion.p>
             
             <motion.div 
